@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网页</title>
+    <style>
+      body{
+        background-color: rgba(238,49,27,0.2)
+    }
+      *{
+          box-sizing: border-box;
+      }
+    div.search {
+        padding: 10px;
+    }
+    form{
+        position: relative;
+        width: 450px;
+        margin: auto;
+        top: 200px;
+    }
+    input,button{
+        border: none;
+        outline: none;
+    }
+    .search input{
+        width: 100%;
+        height: 42px;
+        padding-left: 13px;
+        border: 2px solid gray;
+        background:transparent;
+    }
+    .search button{
+        height: 42px;
+        width: 80px;
+        cursor: pointer;
+        position: absolute;
+        background: gray;
+        border-radius: 0 19px 19px 0;
+        right: 0;
+    }
+    .search button:hover{
+        background-color: darkgray;
+    }
+    .search button:before{
+        content: "搜索一下";
+        font-size: 13px;
+        color: white;
+    }
+      .box{
+        display: flex;
+        height: 100px;
+        width: 120px;
+        background: none;
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid darkgray;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 350px;
+        left: 250px;
+        right: 250px;
+    }
+      .flex-container2{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          position: absolute;
+          top: 500px;
+          left: 250px;
+          right: 250px;
+      }
+    .ss{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 15px;
+    }
+    .item{
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .item2{
+        color: white;
+        right: 90px;
+        position: fixed;
+    }
+    .item3{
+        color: white;
+        right: 20px;
+        top: 10px;
+        position: fixed;
+        background: lightgrey;
+        padding: 4px;
+        border: 2px solid darkgray;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+<div class="search">
+    <form action="" method="post">
+        <input placeholder="" name="keyword" type="text">
+        <button type="submit"></button>
+    </form>
+</div>
+<div class="ss">
+ <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" width="250" height="120" alt="百度一下，你就知道">
+</div>
+<div class="flex-container1">
+ <div class="box">
+     <a href="https://nikki4.papegames.cn/home">
+         <img src="https://nn4cdn.nikkigames.cn/nn4cn/home/images/logo-w.png" width="80" height="80"  alt="">
+     </a></div>
+ <div class="box">
+     <a href="https://www.zhihu.com/signin?next=%2F">
+         <img src="https://pic2.zhimg.com/80/v2-f6b1f64a098b891b4ea1e3104b5b71f6_720w.png" width="100" height="70" alt="">
+     </a></div>
+ <div class="box">
+     <a href="https://www.lofter.com/front/login">
+         <img src="https://lofter.lf127.net/1610534500868/logo.png" width="100" height="70" alt="">
+     </a></div>
+ <div class="box">
+     <a href="https://www.papegames.cn/">
+         <img src="https://blcdnsmall.nikkigames.cn/sdk/poster/papeweb/home/img/paper.png" height="70" width="100" alt="">
+     </a></div>
+</div>
+<div class="flex-container2">
+ <div class="box">
+     <a href="https://www.tianditu.gov.cn/">
+         <img src="https://www.tianditu.gov.cn/static/lib/images/logo.svg" height="70" width="80" alt="">
+     </a></div>
+ <div class="box">
+     <a href="https://www.gmw.cn/">
+         <img src="https://img.gmw.cn/images/47811.files/images/logo.png" width="100" height="70" alt="">
+     </a></div>
+ <div class="box">
+     <a href="http://www.people.com.cn/">
+         <img src="http://www.people.com.cn/img/2020peopleindex/img/t_logo1.png" width="100" height="70" alt="">
+     </a></div>
+ <div class="box">
+     <a href="http://xinhuanet.com/">
+         <img src="http://xinhuanet.com/2021homepro/images/logo.png" height="70" width="100" alt="">
+     </a></div>
+</div>
+<div class="nav-bar">
+    <div class="item"><a href="https://news.baidu.com/">新闻</a></div>
+    <div class="item"><a href="https://www.hao123.com/?src=from_pc">hao123</a></div>
+    <div class="item">
+        <a href="https://map.baidu.com/@12748538.99,4559724.44,12z">地图</a>
+    </div>
+    <div class="item"><a href="https://tieba.baidu.com/">贴吧</a></div>
+    <div class="item"><a href="http://v.xiaodutv.com/movie">视频</a></div>
+    <div class="item"><a href="https://image.baidu.com/">图片</a></div>
+    <div class="item"><a href="https://pan.baidu.com/">网盘</a></div>
+    <div class="item"><a href="https://www.baidu.com/more/">更多</a></div>
+</div>
+<div class="nav-bar">
+    <div class="item2">设置</div>
+    <div class="item3"><a href="https://passport.baidu.com/v2/?login">登录</a></div>
+</div>
+</body>
+</html>
