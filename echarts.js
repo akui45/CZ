@@ -51467,7 +51467,7 @@
     }
 
     function fixNanhai(mapType, regions) {
-      if (mapType === 'china') {
+      if (mapType === 'china1') {
         for (var i = 0; i < regions.length; i++) {
           // Already exists.
           if (regions[i].name === nanhaiName) {

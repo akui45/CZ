@@ -436,7 +436,7 @@
                 emphasis: {
                     areaColor: 'rgba(128,118,163,0.8)'
                 }
-            }
+            },
         },
         series: series
     };
